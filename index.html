@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light-Bulb-Effect</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            background-image: linear-gradient(to right , blue,orange);
+        }
+        div{
+            display:flex;
+            position:relative;
+            justify-content: center;
+            top:250px;
+        }
+        div p{
+            font-size: 5rem;
+            letter-spacing: 1rem;
+            color:white;
+            -webkit-box-reflect: below 1px linear-gradient(transparent , #0008) ;
+            line-height: 0.7em;
+            outline:none;
+            animation : hello-animate 4s linear infinite;
+        }
+        @keyframes hello-animate{
+          0%{
+              color:#0e3742;
+              text-shadow: none;
+          }
+          100%{
+              color:#fff;
+              text-shadow:0 0 10px #03bcf4,
+              0 0 20px #03bcf4,
+              0 0 40px #03bcf4,
+              0 0 80px #03bcf4,
+              0 0 160px #03bcf4
+                  
+          }
+        }
+    </style>
+</head>
+<body>
+    <div>
+          <p>YOKESH CHOWDARY</p>
+    </div>
+</body>
+</html>
